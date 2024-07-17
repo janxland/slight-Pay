@@ -1,9 +1,9 @@
 # compiled output
-/dist
-/node_modules
-/wxcert
+/server/dist
+/server/node_modules
+/server/wxcert
 
-.env
+/server/.env
 # Logs
 logs
 *.log
