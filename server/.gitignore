@@ -2,7 +2,6 @@
 /dist
 /node_modules
 /wxcert
-
 .env
 # Logs
 logs

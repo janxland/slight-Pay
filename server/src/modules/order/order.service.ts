@@ -80,7 +80,7 @@ export class OrderService {
   async createOrder(order: Order) {
     try {
       let newOrder = Object.assign(new Order(), order);
-      //orderId是否已经在数据库中存在 已存在重新生成new Order()
+      
       while (await this.orderRepository.findOne({ orderId: order.orderId })) {
         newOrder = Object.assign(new Order(), order);
       }

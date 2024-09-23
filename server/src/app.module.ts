@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { OrderModule } from './modules/order/order.module';
+import { ePayModule } from './modules/epay/epay.module';
 require('dotenv').config();
 @Module({
   imports: [
@@ -15,7 +16,8 @@ require('dotenv').config();
       autoLoadEntities: true,
       synchronize: true,
     }),
-    OrderModule
+    ePayModule,
+    OrderModule,
   ],
 })
 export class AppModule {}
